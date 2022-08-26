@@ -1,6 +1,6 @@
 {
   "consumer": {
-    "name": "Web App"
+    "name": "WebApp"
   },
   "interactions": [
     {
@@ -65,6 +65,6 @@
     }
   },
   "provider": {
-    "name": "Animal API"
+    "name": "AnimalAPI"
   }
 }

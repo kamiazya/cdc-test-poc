@@ -6,9 +6,9 @@ import { DogServiceClient } from '../DogServiceClient.js';
 
 pactWith(
   {
-    consumer: 'Web App',
-    provider: 'Animal API',
-    dir: path.resolve(__dirname, '../../pact'),
+    consumer: 'WebApp',
+    provider: 'AnimalAPI',
+    dir: path.resolve(__dirname, '../../..'),
   },
   (provider) => {
 

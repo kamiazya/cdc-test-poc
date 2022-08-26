@@ -10,10 +10,10 @@ PROVIDER_URL = f"http://{PROVIDER_HOST}:{PROVIDER_PORT}"
 
 
 def test_user_service_provider_against_pact(server):
-    verifier = Verifier(provider="Animal API", provider_base_url=PROVIDER_URL)
+    verifier = Verifier(provider="AnimalAPI", provider_base_url=PROVIDER_URL)
 
     output, _ = verifier.verify_pacts(
-        "../pact/Web App-Animal API.json",
+        "../WebApp-AnimalAPI.json",
         verbose=False,
     )
 
