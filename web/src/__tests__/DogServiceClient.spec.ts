@@ -1,14 +1,14 @@
 import path from 'node:path';
 import { pactWith } from 'jest-pact';
 import { HTTPMethods } from '@pact-foundation/pact/src/common/request.js';
-import { DogServiceClient } from './client.js';
+import { DogServiceClient } from '../DogServiceClient.js';
 
 
 pactWith(
   {
     consumer: 'Web App',
     provider: 'Animal API',
-    dir: path.resolve(__dirname, '../pact'),
+    dir: path.resolve(__dirname, '../../pact'),
   },
   (provider) => {
 

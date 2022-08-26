@@ -1,0 +1,70 @@
+{
+  "consumer": {
+    "name": "Web App"
+  },
+  "interactions": [
+    {
+      "description": "a request for cats with given catId",
+      "providerState": "i have a list of cats",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/cats",
+        "query": "catId[]=2&catId[]=3"
+      },
+      "response": {
+        "body": [
+          {
+            "cat": 2
+          },
+          {
+            "cat": 3
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "a request for dogs",
+      "providerState": "i have a list of dogs",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/dogs"
+      },
+      "response": {
+        "body": [
+          {
+            "dog": 1
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "10.1.2"
+    },
+    "pactRust": {
+      "ffi": "0.3.8",
+      "models": "0.4.4"
+    },
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "Animal API"
+  }
+}

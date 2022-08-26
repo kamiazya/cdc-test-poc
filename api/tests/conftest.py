@@ -1,16 +1,16 @@
-import sys
 from multiprocessing import Process
 
 import pytest
+import uvicorn
 
-from pact_provider import run_server
+from src.api import app, router
 
-sys.path.append('tests')
-sys.path.append('src')
 
-# pytest_plugins = [
-#     "sharedfixtures",
-# ]
+def run_server():
+
+    app.include_router(router)
+
+    uvicorn.run(app)
 
 
 @pytest.fixture(scope="module")
