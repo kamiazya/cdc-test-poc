@@ -1,1 +1,0 @@
-# pact-node-playground
