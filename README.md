@@ -26,6 +26,8 @@ marp: true
 
 # DEMO
 
+[Pect](https://www.pect.io/) というフレームワークで試してみる。
+
 ---
 
 # 参考
